@@ -70,28 +70,102 @@
 
 
 // Operator Precedence
-var now = 2018;
-var yearJohn = 1989;
-var fullAge = 18;
+// var now = 2018;
+// var yearJohn = 1989;
+// var fullAge = 18;
 
-// Multiple operators
-var isFullAge = now - yearJohn >= fullAge; // true
-console.log(isFullAge);
+// // Multiple operators
+// var isFullAge = now - yearJohn >= fullAge; // true
+// console.log(isFullAge);
 
-// Grouping
-var ageJohn = now - yearJohn;
-var ageMark = 35;
-var average = (ageJohn + ageMark) / 2;
-console.log(average);
+// // Grouping
+// var ageJohn = now - yearJohn;
+// var ageMark = 35;
+// var average = (ageJohn + ageMark) / 2;
+// console.log(average);
 
-// Multiple assignments
-var x, y;
-x = y = (3 + 5) * 4 - 6; // 8 * 4 - 6 // 32 - 6 // 26
-console.log(x, y);
+// // Multiple assignments
+// var x, y;
+// x = y = (3 + 5) * 4 - 6; // 8 * 4 - 6 // 32 - 6 // 26
+// console.log(x, y);
 
-// More operators
-x = x * 2; // 52
-x *= 2; // 104
-console.log(x);
-x++
-console.log(x);
+// // More operators
+// x = x * 2; // 52
+// x *= 2; // 104
+// console.log(x);
+// x++;
+// console.log(x); // 105
+
+
+// CHALLENGE 1
+// var johnMass, johnHeight, markMass, markHeight, johnBmi, markBmi;
+// johnMass = 75;
+// johnHeight = 1.82;
+// markMass = 86;
+// markHeight = 1.92;
+
+// johnBmi = johnMass / (johnHeight * johnHeight);
+// markBmi = markMass / (markHeight * markHeight);
+
+// isItHigher = markBmi > johnBmi;
+
+// console.log("Is Mark's BMI higher than John's BMI? " + isItHigher)
+
+// megBMI = 57.6 / (1.66^2);
+// console.log(megBMI);
+
+// joshBMI = 74.4 / (1.78^2);
+// console.log(joshBMI);
+
+
+// If / Else Statements
+
+// var firstName = "John";
+// var civilStatus = "single";
+
+// if (civilStatus === "married") {
+//     console.log(firstName + " is married!");
+// } else {
+//     console.log(firstName + " will hopefully marry soon :)");
+// }
+
+// var isMarried = true;
+// if (isMarried) {
+//     console.log(firstName + " is married!");
+// } else {
+//     console.log(firstName + " will hopefully marry soon :)");
+// }
+
+// Ternary operator and switch statements
+
+// var firstName = "John";
+// var age = 16;
+
+// age >= 18 ? console.log(firstName + " drinks beer")
+// : console.log(firstName + " drinks juice");
+
+// var drink = age >= 18 ? "beer" : "juice";
+// console.log(drink);
+
+// CHALLENGE 2
+
+var johnAverage, mikeAverage, maryAverage
+johnAverage = ((89 +120 +103)/3);
+mikeAverage = ((116 + 94 + 123)/3);
+maryAverage = ((97 + 134 + 105)/3);
+
+if (johnAverage > mikeAverage >= maryAverage) {
+    console.log("John is the winner");
+} else if (mikeAverage > johnAverage >= maryAverage) {
+    console.log("Mike is the winner");
+} else if (maryAverage > johnAverage >= mikeAverage) {
+    console.log("Mary is the winner!");
+} else if (mikeAverage = johnAverage > maryAverage) {
+    console.log("Mike and John Draw!");
+} else if (maryAverage = johnAverage > mikeAverage) {
+    console.log("Mary and John Draw!");
+} else if (maryAverage = mikeAverage > johnAverage) {
+    console.log("Mary and Mike Draw!");
+} else {
+    console.log("They all Draw!");
+}
