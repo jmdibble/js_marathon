@@ -149,23 +149,44 @@
 
 // CHALLENGE 2
 
-var johnAverage, mikeAverage, maryAverage
-johnAverage = ((89 +120 +103)/3);
-mikeAverage = ((116 + 94 + 123)/3);
-maryAverage = ((97 + 134 + 105)/3);
+// var johnAverage, mikeAverage, maryAverage
+// johnAverage = ((89 +120 +103)/3);
+// mikeAverage = ((116 + 94 + 123)/3);
+// maryAverage = ((97 + 134 + 105)/3);
 
-if (johnAverage > mikeAverage >= maryAverage) {
-    console.log("John is the winner");
-} else if (mikeAverage > johnAverage >= maryAverage) {
-    console.log("Mike is the winner");
-} else if (maryAverage > johnAverage >= mikeAverage) {
-    console.log("Mary is the winner!");
-} else if (mikeAverage = johnAverage > maryAverage) {
-    console.log("Mike and John Draw!");
-} else if (maryAverage = johnAverage > mikeAverage) {
-    console.log("Mary and John Draw!");
-} else if (maryAverage = mikeAverage > johnAverage) {
-    console.log("Mary and Mike Draw!");
-} else {
-    console.log("They all Draw!");
+// if (johnAverage > mikeAverage >= maryAverage) {
+//     console.log("John is the winner");
+// } else if (mikeAverage > johnAverage >= maryAverage) {
+//     console.log("Mike is the winner");
+// } else if (maryAverage > johnAverage >= mikeAverage) {
+//     console.log("Mary is the winner!");
+// } else if (mikeAverage = johnAverage > maryAverage) {
+//     console.log("Mike and John Draw!");
+// } else if (maryAverage = johnAverage > mikeAverage) {
+//     console.log("Mary and John Draw!");
+// } else if (maryAverage = mikeAverage > johnAverage) {
+//     console.log("Mary and Mike Draw!");
+// } else {
+//     console.log("They all Draw!");
+// }
+
+
+// FUNCTIONS
+
+function calculateAge(birthYear) {
+    return 2018 - birthYear;
 }
+
+var ageJohn = calculateAge(1990);
+var ageMike = calculateAge(1948);
+var ageJane = calculateAge(1969);
+
+console.log(ageJohn, ageMike, ageJane);
+
+function yearsUntilRetirement(year, firstName) {
+    var age = calculateAge(year);
+    var retirement = 65 - age;
+    console.log(firstName + " retires in " + retirement + " years.");
+}
+
+yearsUntilRetirement(1990, "John");
