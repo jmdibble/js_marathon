@@ -173,20 +173,49 @@
 
 // FUNCTIONS
 
-function calculateAge(birthYear) {
-    return 2018 - birthYear;
-}
+// function calculateAge(birthYear) {
+//     return 2018 - birthYear;
+// }
 
-var ageJohn = calculateAge(1990);
-var ageMike = calculateAge(1948);
-var ageJane = calculateAge(1969);
+// var ageJohn = calculateAge(1990);
+// var ageMike = calculateAge(1948);
+// var ageJane = calculateAge(1969);
 
-console.log(ageJohn, ageMike, ageJane);
+// console.log(ageJohn, ageMike, ageJane);
 
-function yearsUntilRetirement(year, firstName) {
-    var age = calculateAge(year);
-    var retirement = 65 - age;
-    console.log(firstName + " retires in " + retirement + " years.");
-}
+// function yearsUntilRetirement(year, firstName) {
+//     var age = calculateAge(year);
+//     var retirement = 65 - age;
+//     console.log(firstName + " retires in " + retirement + " years.");
+// }
 
-yearsUntilRetirement(1990, "John");
+// yearsUntilRetirement(1990, "John");
+
+
+// ARRAYS
+
+var names = ["John", "Mark", "Jane"];
+var years = new Array(1990, 1969, 1948);
+
+console.log(names);
+console.log(names[0]);
+console.log(names.length);
+
+// Mutate array data
+names[1] = "Ben";
+names[5] = "Mary";
+names[names.length] = "Mary";
+console.log(names);
+
+names.push("Steve");
+names.unshift("Lucy");
+names.pop();
+console.log(names);
+
+console.log(names.indexOf("Ben"));
+
+var isReal = names.indexOf("Mary") === -1 ? "Mary is not real" : "Mary is real";
+console.log(isReal);
+
+
+
