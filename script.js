@@ -194,28 +194,58 @@
 
 // ARRAYS
 
-var names = ["John", "Mark", "Jane"];
-var years = new Array(1990, 1969, 1948);
+// var names = ["John", "Mark", "Jane"];
+// var years = new Array(1990, 1969, 1948);
 
-console.log(names);
-console.log(names[0]);
-console.log(names.length);
+// console.log(names);
+// console.log(names[0]);
+// console.log(names.length);
 
-// Mutate array data
-names[1] = "Ben";
-names[5] = "Mary";
-names[names.length] = "Mary";
-console.log(names);
+// // Mutate array data
+// names[1] = "Ben";
+// names[5] = "Mary";
+// names[names.length] = "Mary";
+// console.log(names);
 
-names.push("Steve");
-names.unshift("Lucy");
-names.pop();
-console.log(names);
+// names.push("Steve");
+// names.unshift("Lucy");
+// names.pop();
+// console.log(names);
 
-console.log(names.indexOf("Ben"));
+// console.log(names.indexOf("Ben"));
 
-var isReal = names.indexOf("Mary") === -1 ? "Mary is not real" : "Mary is real";
-console.log(isReal);
+// var isReal = names.indexOf("Mary") === -1 ? "Mary is not real" : "Mary is real";
+// console.log(isReal);
 
 
+// CODING CHALLENGE 3
 
+function calcTip(bill) {
+    if (bill < 50) {
+        return bill * 0.2;
+    }
+    else if (50 <= bill < 200) {
+        return bill * 0.15;
+    }
+    else {
+        return bill * 0.1;
+    }
+}
+
+// console.log(calcTip(124))
+
+var arrayTips = [];
+var arrayTotal = [];
+
+function calcArray(bill) {
+    var tip = calcTip(bill);
+    arrayTips.push(tip);
+    arrayTotal.push(tip+bill);
+}
+
+calcArray(124);
+calcArray(48);
+calcArray(246);
+
+console.log(arrayTips);
+console.log(arrayTotal);
