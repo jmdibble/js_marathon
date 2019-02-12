@@ -249,3 +249,5 @@ calcArray(246);
 
 console.log(arrayTips);
 console.log(arrayTotal);
+
+
