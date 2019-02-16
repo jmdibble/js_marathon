@@ -220,34 +220,123 @@
 
 // CODING CHALLENGE 3
 
-function calcTip(bill) {
-    if (bill < 50) {
-        return bill * 0.2;
-    }
-    else if (50 <= bill < 200) {
-        return bill * 0.15;
-    }
-    else {
-        return bill * 0.1;
-    }
+// function calcTip(bill) {
+//     if (bill < 50) {
+//         return bill * 0.2;
+//     }
+//     else if (50 <= bill && bill < 200) {
+//         return bill * 0.15;
+//     }
+//     else {
+//         return bill * 0.1;
+//     }
+// }
+
+// // console.log(calcTip(124))
+
+// var arrayTips = [];
+// var arrayTotal = [];
+
+// function calcArray(bill) {
+//     var tip = calcTip(bill);
+//     arrayTips.push(tip);
+//     arrayTotal.push(tip+bill);
+// }
+
+// calcArray(124);
+// calcArray(48);
+// calcArray(268);
+
+// console.log(arrayTips);
+// console.log(arrayTotal);
+
+
+// OBJECTS AND PROPERTIES
+
+// Object literal
+// var john = {
+//     firstName: "John",
+//     lastName: "Smith",
+//     birthYear: 1990,
+//     family: ["Jane", "Mark", "Bob", "Emily"],
+//     job: "teacher",
+//     isMarried: false
+// };
+
+// console.log(john.firstName);
+// console.log(john["lastName"]);
+// var x = "birthYear";
+// console.log(john[x]);
+
+// john.job = "designer";
+// john["isMarried"] = true;
+// console.log(john);
+
+// // New object syntax
+// var jane = new Object();
+// jane.name = "Jane";
+// jane.birthYear = 1969;
+// jane["lastName"] = "Smith";
+// console.log(jane);
+
+
+//OBJECTS AND METHODS
+
+// var john = {
+//     firstName: "John",
+//     lastName: "Smith",
+//     birthYear: 1990,
+//     family: ["Jane", "Mark", "Bob", "Emily"],
+//     job: "teacher",
+//     isMarried: false,
+//     calcAge: function(birthYear) {
+//         this.age = 2018 - this.birthYear;
+//     }
+// };
+
+// john.calcAge();
+// console.log(john);
+
+
+// CHALLENGE 4
+
+// var john = {
+//     firstName: "John",
+//     lastName: "Smith",
+//     mass: 85,
+//     height: 2.01,
+//     bmi: function(mass, height) {
+//         this.bmi = this.mass / (this.height*this.height);
+//     }
+// };
+
+// var mark = {
+//     firstName: "Mark",
+//     lastName: "Head",
+//     mass: 76,
+//     height: 2.09,
+//     bmi: function(mass, height) {
+//         this.bmi = this.mass / (this.height*this.height);
+//     }
+// };
+
+// john.bmi();
+// console.log(john);
+
+// mark.bmi();
+// console.log(mark);
+
+// if (mark.bmi < john.bmi) {
+//     console.log("John is a fatty");
+// } else {
+//     console.log("Mark is a fatty");
+// }
+
+
+// LOOPS AND ITERATION
+
+for (var i = 1; i <= 10; i+=2) {
+    console.log(i);
 }
 
-// console.log(calcTip(124))
-
-var arrayTips = [];
-var arrayTotal = [];
-
-function calcArray(bill) {
-    var tip = calcTip(bill);
-    arrayTips.push(tip);
-    arrayTotal.push(tip+bill);
-}
-
-calcArray(124);
-calcArray(48);
-calcArray(246);
-
-console.log(arrayTips);
-console.log(arrayTotal);
-
-
+var john = ["John", "Smith", 1990, "designer", false];
