@@ -369,3 +369,28 @@
 //     console.log(john[i]);
 // }
 
+// CHALLENGE 5
+
+var bills = {
+    tips: [],
+    totals: [],
+    amount: [124, 48, 268, 180, 42],
+    tip: function(amount) {
+        for (var i = 0; i < this.amount.length; i++) {
+            if (this.amount[i] < 50) {
+                this.tips.push(this.amount[i] * 0.2);
+                this.totals.push(this.amount[i]*1.2);
+            } else if (this.amount[i] >= 50 && this.amount[i] <= 200) {
+                this.tips.push(this.amount[i] * 0.15);
+                this.totals.push(this.amount[i]*1.15);
+            } else {
+                this.tips.push(this.amount[i] * 0.1);
+                this.totals.push(this.amount[i]*1.1);
+            }
+        }
+    }
+}
+
+bills.tip();
+console.log(bills.tips, bills.totals);
+
